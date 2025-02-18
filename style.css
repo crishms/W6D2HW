@@ -17,16 +17,12 @@ header {
 }
 .main-header {
     background-color: rgb(255,255,255,0.8);
-    width: 720px;
-    margin: 2em auto 0 auto;
-    min-height: 100px;
-    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
 }
 .main-header .logo img {
-    width: 100px;
-    height: 100px;
-    margin: 0 2em 0 0;
-    float: left;
+    width: 125px;
 }
 .main-menu {
     margin-left: 227px;
@@ -82,10 +78,11 @@ section {
     background-color: #4288c3;
 }
 section #partners {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 2em 0 2em 0;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 1em 0;
 }
 section #partners .partner {
     display: inline-block;
@@ -150,6 +147,27 @@ footer #social {
     text-align: center;
     margin-top: 1em;
     list-style: horizontal;
+}
+/* Media Queries (Adjustments for smaller screens) */
+@media (max-width: 768px) {
+    .main-menu ul {
+        text-align: center;
+    }
+
+    .main-header {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-menu ul {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .main-header .logo img {
+        width: 100px;
+    }
 }
 table {
     width: 1000px;

@@ -4,6 +4,7 @@ const section = document.createElement('section');
 // Create the unordered list (ul) element
 const ul = document.createElement('ul');
 ul.id = 'partners';
+ul.classList.add('row'); // Use Bootstrap's grid system for responsive layout
 
 // Create the list items (li) and image elements
 const partners = [
